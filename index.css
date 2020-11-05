@@ -1,0 +1,67 @@
+body {
+    width: 800px;
+    margin: 20px auto;
+}
+
+.slider-pic {
+    position: relative;
+}
+
+.hidden-images {
+    display: none;
+}
+
+.slider-pic img {
+    width: 800px;
+}
+
+ul {
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transform: translateX(50%);
+}
+
+li {
+    height: 25px;
+    width: 25px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    opacity: 0.5;
+}
+
+li:hover {
+    opacity: unset;
+    cursor: pointer;
+}
+
+.choosing-pic {
+    /* width: 800px;  */
+    /*with width 800px something is holding my fucking 16px and can't find why...
+    show to guja */
+    display: flex;
+    margin-top: 1px;
+    border-top: 1px solid #bbb;
+    border-bottom: 1px solid #bbb;
+    /* need an alternative for border.
+    if I want to use 2 or 3 side of border.
+    which is correct form: write multiply or somethings else
+    ask to guja */
+}
+
+.choosing-pic img {
+    width: 158px;
+    border: 1px solid #bbb;
+    opacity: 0.5;
+}
+
+.choosing-pic img:hover {
+    opacity: unset;
+    cursor: pointer;
+}
+
+
+
+
+
