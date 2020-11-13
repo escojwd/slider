@@ -5,12 +5,14 @@
 
 const mainImage = document.getElementById('main-pic');
 const images = document.querySelectorAll('.choosing-pic img');
+const imagesContainer = document.getElementById('choosing-pic');
+
 
 let i = 0;
 
-images.forEach((image) => {
-    image.addEventListener('click', () => {
-        console.log(i+=2);
-        mainImage.setAttribute("src", image.attributes);
-    })
-});
+imagesContainer.addEventListener('click', e => {
+    if(e.target.tagName === "IMG"){
+        mainImage.setAttribute("src", e.target.getAttribute('src'));
+    }
+})
+ 
